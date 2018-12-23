@@ -499,7 +499,7 @@ Disassembly of section .text:
   4010d0:	eb 07                	jmp    4010d9 <phase_5+0x77>  # ----------------------> safe
   4010d2:	b8 00 00 00 00       	mov    $0x0,%eax            # 2 0 -> eax
   4010d7:	eb b2                	jmp    40108b <phase_5+0x29>  # ----------------------> 1
-  4010d9:	48 8b 44 24 18       	mov    0x18(%rsp),%rax      # 3 M[rsp + 18] -> rax
+  4010d9:	48 8b 44 24 18       	mov    0x18(%rsp),%rax      # 3 取回读出的金丝雀 -> rax
   4010de:	64 48 33 04 25 28 00 	xor    %fs:0x28,%rax          # if rax和只读值相等
   4010e5:	00 00 
   4010e7:	74 05                	je     4010ee <phase_5+0x8c>  # then 跳过栈检查失败函数
